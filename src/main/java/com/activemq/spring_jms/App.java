@@ -16,6 +16,7 @@ public class App {
     public static void main( String[] args ) {
     	
     	context = new ClassPathXmlApplicationContext(new String[] {"spring-context.xml"}); 
+    	context.start();
     	
     	messageSendService = (MessageSendService) context.getBean("messageSendService");
 
